@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/gray_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tab_receipt"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/ic_receipt"
+            android:tag="0"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:drawablePadding="2dp"
+            android:textColor="@color/color_text_product_desc"
+            android:text="@string/receipt"
+            />
+        <TextView
+            android:id="@+id/tab_team"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/ic_team"
+            android:tag="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/color_text_product_desc"
+            android:text="@string/team"
+            android:drawablePadding="2dp"
+            />
+        <TextView
+            android:id="@+id/tab_wallet"
+            android:textSize="12sp"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/ic_wallet"
+            android:tag="2"
+            android:gravity="center"
+            android:textColor="@color/color_text_product_desc"
+            android:text="@string/wallet"
+            android:drawablePadding="2dp"
+            />
+        <TextView
+            android:id="@+id/tab_my"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/ic_my"
+            android:tag="3"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:textSize="12sp"
+            android:text="@string/my"
+            android:textColor="@color/color_text_product_desc"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

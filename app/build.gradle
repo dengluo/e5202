@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        multiDexEnabled true
+        //简单而快速的图像处理
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+//        ndk{
+//            abiFilters "armeabi"
+//        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support:support-annotations:25.1.0'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test:rules:0.5'
+
+    //base
+    implementation "com.android.support:appcompat-v7:25.1.0"
+    implementation "com.android.support:design:25.1.0"
+    implementation "com.android.support:cardview-v7:27.1.1"
+
+    //ui
+    implementation "com.prolificinteractive:material-calendarview:1.4.0"
+    implementation "com.miguelcatalan:materialsearchview:1.4.0"
+    implementation "net.opacapp:multiline-collapsingtoolbar:1.3.1"
+    implementation "com.github.chrisbanes:PhotoView:1.3.0"
+    implementation "jp.wasabeef:glide-transformations:1.2.1"
+    implementation "org.sufficientlysecure:html-textview:3.1"
+
+    //rx
+    implementation "io.reactivex.rxjava2:rxjava:2.0.7"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation "com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar"
+
+    //network
+    implementation "com.google.code.gson:gson:2.7"
+    implementation "com.squareup.retrofit2:retrofit:2.2.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.2.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.2.0"
+    implementation "com.squareup.okhttp3:okhttp:3.6.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.6.0"
+    implementation "com.github.bumptech.glide:glide:3.7.0"
+    implementation "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar"
+    implementation "org.jsoup:jsoup:1.10.1"
+
+    //di
+    implementation "com.google.dagger:dagger:2.0.2"
+    implementation "com.google.dagger:dagger-compiler:2.0.2"
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compileOnly "org.glassfish:javax.annotation:10.0-b28"
+
+    //other
+    implementation "com.android.support:multidex:1.0.1"
+    implementation "com.orhanobut:logger:1.15"
+    implementation "me.yokeyword:fragmentation:0.7.9"
+    implementation "com.tencent.bugly:crashreport:latest.release"
+
+    //canary
+    debugImplementation "com.github.moduth:blockcanary-android:1.2.1"
+    releaseImplementation "com.github.moduth:blockcanary-no-op:1.2.1"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:1.4-beta2"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2"
+
+    //蒲公英版本更新
+    implementation 'com.pgyersdk:sdk:2.8.1'
+    implementation 'commons-net:commons-net:3.5'
+
+    implementation project(':imagepicker')
+
+    // 沉浸式状态栏基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta03'
+// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta03'
+}

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.moduth:blockcanary-core-1.2.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/blockcanary-core-1.2.1.aar/752fa231625af5af6e6a15072224b567/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/blockcanary-core-1.2.1.aar/752fa231625af5af6e6a15072224b567/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.moduth/blockcanary-core/1.2.1/ef70985ea1edd3f3760a8eefd1ab8f594b62e82d/blockcanary-core-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

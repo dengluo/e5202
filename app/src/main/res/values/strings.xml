@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">E520</string>
+
+    <string name="error_tips">糟糕！加载失败了ヽ(≧Д≦)ノ\n 偷偷告诉你一些可能的原因：\n1.惨不忍睹的网络环境\n 2.服务器君的不定期抽风\n 3.GeekNews现在心情不好拒绝服务喔~</string>
+    <string name="loading">加载中...</string>
+    
+    <array name="viewpager_indicator">图片查看器</array>
+    <!--底部菜单栏-->
+    <string name="receipt">接单</string>
+    <string name="team">团队</string>
+    <string name="wallet">钱包</string>
+    <string name="my">我的</string>
+
+
+
+    <string name="fanhui">返回</string>
+    <string name="english">English</string>
+    <string name="e520">E520</string>
+    <string name="denglue520">登录E520</string>
+    <string name="qingshurudenglumima">请输入登录密码</string>
+    <string name="wangjimima">忘记密码</string>
+    <string name="denglu">登录</string>
+    <string name="haimeiyouzhanghao">还没有E520账号？</string>
+    <string name="gugeyanzheng">谷歌验证</string>
+    <string name="qingbangdinggugeyanzhengqi">为了您的资金安全，请绑定谷歌验证器</string>
+    <string name="miyao">密钥</string>
+    <string name="qingshurugugeyanzhengqi">请输入谷歌验证码</string>
+    <string name="qingshuruzijinmima">请输入资金密码</string>
+    <string name="queding">确定</string>
+    <string name="gugeyanzhengma">谷歌验证码</string>
+    <string name="liuweishugugeyanzhengma">6位数谷歌验证码</string>
+    <string name="zhucee520">注册E520</string>
+    <string name="shoujihaoma">手机号码</string>
+    <string name="xiayibu">下一步</string>
+    <string name="anquanyanzheng">安全验证</string>
+    <string name="qingshuruduanxinyanzhengma">请输入短信验证码</string>
+    <string name="shezhimima">设置密码</string>
+    <string name="bukeyishichunshuzi">6-20位字符，不可以是纯数字</string>
+    <string name="qingzaicishurumima">请再次输入密码</string>
+    <string name="shezhizhifumima">设置支付密码</string>
+    <string name="qingzaicishuruzhifumima">请再次输入支付密码</string>
+    <string name="yaoqingmabitian">邀请码（必填）</string>
+    <string name="wotongyi">我同意</string>
+    <string name="yonghuxieyi">《用户协议》</string>
+    <string name="zhuce">注册</string>
+    <string name="zhucechenggong">注册成功</string>
+    <string name="chongxinfasong">重新发送</string>
+    <string name="quxiao">取消</string>
+    <string name="qingshuruyonghuming">请输入用户名</string>
+</resources>

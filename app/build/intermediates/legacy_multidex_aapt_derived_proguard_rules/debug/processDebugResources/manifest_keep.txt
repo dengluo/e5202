@@ -1,0 +1,2 @@
+# Referenced at E:\yijiupro\e520\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:34
+-keep class com.yijiu.e520.app.App { <init>(...); }

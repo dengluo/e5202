@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.gyf.immersionbar:immersionbar-components-3.0.0-beta03">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/immersionbar-components-3.0.0-beta03.aar/9f1c07937c25f4f2fbe0500c3016f56f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/immersionbar-components-3.0.0-beta03.aar/9f1c07937c25f4f2fbe0500c3016f56f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gyf.immersionbar/immersionbar-components/3.0.0-beta03/60169875a18d6da5138f26ef3369131756e9ea9b/immersionbar-components-3.0.0-beta03-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

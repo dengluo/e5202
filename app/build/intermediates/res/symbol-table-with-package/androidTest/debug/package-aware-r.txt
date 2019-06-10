@@ -1,0 +1,2 @@
+com.yijiu.e520.test
+string app_name
